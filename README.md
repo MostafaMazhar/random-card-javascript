@@ -1,12 +1,13 @@
 
-![randomCard](https://github.com/MostafaMazhar/random-card-javascript/assets/65758011/10c586e7-c5cc-46cf-b800-08542e7023c7)
-
-![](randomCard.gif)
-=======
 
 # Hello World with Vanilla JS
 
 Start coding a JS/HTML/CSS website in 30 seconds by opening this template in [Codespaces](https://github.com/codespaces/new/?repo=4GeeksAcademy/vanillajs-hello) or [Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/vanillajs-hello.git).
+
+![randomCard](https://github.com/MostafaMazhar/random-card-javascript/assets/65758011/10c586e7-c5cc-46cf-b800-08542e7023c7)
+
+![](randomCard.gif)
+=======
 
 ## Before you begin
 
