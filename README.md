@@ -6,9 +6,6 @@ Start coding a JS/HTML/CSS website in 30 seconds by opening this template in [Co
 
 ![randomCard](https://github.com/MostafaMazhar/random-card-javascript/assets/65758011/10c586e7-c5cc-46cf-b800-08542e7023c7)
 
-![](randomCard.gif)
-=======
-
 ## Before you begin
 
 Install the packages by typing: `npm install`.
