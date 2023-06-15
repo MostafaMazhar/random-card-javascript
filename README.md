@@ -51,5 +51,4 @@ This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://
 
 You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
 =======
-# random-card-javascript
->>>>>>> d2f9825759eb2e04e931ac3d44e1b2c70d58a6fc
+
