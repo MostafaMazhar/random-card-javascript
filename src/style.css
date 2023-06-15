@@ -1,4 +1,26 @@
 /* @import "~bootstrap/dist/css/bootstrap.min.css"; */
-* body {
-  background-color: rgb(241, 183, 36);
+
+body {
+  background-color: green;
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+  /* margin-bottom: 10px; */
+}
+
+.icon-top {
+  padding-left: 10px;
+  margin-top: -10px;
+}
+
+.icon-bottom {
+  transform: rotate(180deg);
+  padding-left: 10px;
+  margin-bottom: -10px;
+}
+
+.icon-middle {
+  font-weight: 500;
 }

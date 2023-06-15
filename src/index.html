@@ -3,17 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Card Generator Vanilla.js</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <title>Random Card Vanilla.js</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+    
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="manifest" href="./manifest.json" /> -->
   </head>
-  <body>
-    <div class="container text-center">Random Card</div>
-    <script type="module" src="./app.js"></script>
+  <body id="mybody" class="pt-5">
+    <div class="container text-center pt-4">
+      <div
+        class="card pt-4 position-relative"
+        style="width: 26rem; height: 36rem;"
+      >
+        <span class="position-absolute bottom-0 end-0 icon-bottom fa-5x"
+          >&#9824;</span
+        >
+        <span class="position-absolute top-0 start-0 icon-top fa-5x"
+          >&#9824;</span
+        >
+        <div
+          class="position-absolute top-50 start-50 translate-middle icon-middle fa-4x"
+        >
+          8
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>

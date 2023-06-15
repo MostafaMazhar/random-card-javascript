@@ -1,29 +1,44 @@
 /* eslint-disable */
-// import "bootstrap/dist/js/bootstrap.min.js";
+// import "..node_modules/bootstrap";
+// import "./style.css";
 
 window.onload = function() {
-  const cardSuits = ["hearts", "spades", "clubs", "diamonds"];
-  const cardValues = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'King', 'Queen', 'Jack', 'Ace'];
+  const suites = ["♥", "♠", "♣", "♦"];
+  const cardValues = ["2", "3", "4", "5", "6", "7", "8", "9", "10"];
+  let suite; // Declare the suite variable outside the updateCard function
 
+  function randomCard(arr) {
+    return Math.floor(Math.random() * arr.length);
+  }
 
-  function getRandomNumber(min, max){
-    let random = Math.random();  // generates a random number between 0 and 1
-    let difference = max - min;   // calculates the difference between max and min
-    let range = random * difference;  // scales the random number by the difference
-    let finalNumber = Math.floor(range) + min;
-    return finalNumber;
- };
+  function updateCard() {
+    let previousSuite = suite; // Store the previous suite value
+    suite = suites[randomCard(suites)];
+    let values = cardValues[randomCard(cardValues)];
 
+    let middlesuite = document.querySelector(".icon-middle"); //middle suite
+    middlesuite.innerHTML = values;
 
-      // Generate random suit and card value index
-      const cardSuitsIndex = getRandomNumber(0, cardSuits.length -1);
-      const cardValuesIndex = getRandomNumber(0, cardValues.length -1);
-      let randomCardSuits = cardSuits[cardSuitsIndex];
-      let randomCardValue = cardValues[cardValuesIndex];
-
-
-   
-
+    let topsuite = document.querySelector(".icon-top"); //icon-top
+    topsuite.innerHTML = suite;
+    if (suite === "♥" || suite === "♦") {
+      topsuite.style.color = "red";
+    } else if (previousSuite === "♥" || previousSuite === "♦") {
+      // Check the previous suite value
+      topsuite.style.color = "";
+    }
+    let bottomsuite = document.querySelector(".icon-bottom"); //icon-bottom
+    bottomsuite.innerHTML = suite;
+    if (suite === "♥" || suite === "♦") {
+      bottomsuite.style.color = "red";
+    } else if (previousSuite === "♥" || previousSuite === "♦") {
+      // Check the previous suite value
+      bottomsuite.style.color = "";
+    }
+  }
+  updateCard();
+  setInterval(updateCard, 2000);
 };
+
 
 
