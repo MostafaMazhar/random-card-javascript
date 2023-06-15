@@ -48,7 +48,6 @@ Very easy and in just one step!  Push to your __main__ branch and use the free h
 ### Thank you
 
 
-![Screen Shot 2023-06-15 at 6 04 01 PM](https://github.com/MostafaMazhar/random-card-javascript/assets/65758011/eed410bc-b5c3-470b-b9ff-2ab2fd494a54)
-
+![](randomCard.gif)
 =======
 
